@@ -3,24 +3,29 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<title>Anton Morner</title>
-		<script src="scripts/jquery-3.1.1.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</head>
     <body>
         <div class="wrap">
             <div class="mainz">
                 <div class="header">
-                    <h1>Anton Morner</h1>
-                    <h2>Concept Artist</h2>
+					<div class="row">
+						<h1>Anton Morner</h1>
+						<h2>Concept Artist</h2>
+				</div>
             </div><!--
         Showcase-->
                 <div class="showcase">
                     <div class="container">
-                        <img src="src/pelttest.png" />
-                        <img src="src/stolen1.jpg" />
-                        <img src="src/stolen2.jpg" />
-                        <img src="src/stolen3.jpg" />
-                        <img src="src/stolen4.jpg" />
+						<div class="row">
+							<div class="col-md-12 col-sm-10 col-xs-6">
+								<img class="img-responsive" src="src/pelttest.png" onclick="openModal(1)"/>
+								<img class="img-responsive" src="src/stolen1.jpg" onclick="openModal(2)"/>
+								<img class="img-responsive" src="src/stolen2.jpg" onclick="openModal(3)"/>
+								<img class="img-responsive" src="src/stolen3.jpg" onclick="openModal(4)"/>
+								<img class="img-responsive" src="src/stolen4.jpg" onclick="openModal(5)"/>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -28,9 +33,20 @@
 Footer-->
 		<div class="footer">
 			<div class="container">
-                <h1>anton.morner@gmail.com</h1>
-                <img src="https://cfl.dropboxstatic.com/static/images/brand/twitter-card-glyph@2x-vflVqhKLO.png" />
+				<div class="row">
+					<div class="col-sm-6 col-sm-6 col-xs-6">
+					<h1>anton.morner@gmail.com</h1>
+				</div>
+					<div class="col-sm-6 col-sm-6 col-xs-6">
+					<img src="https://cfl.dropboxstatic.com/static/images/brand/twitter-card-glyph@2x-vflVqhKLO.png" />
+				</div>
 			</div>
 		</div>
+	</div><!--
+Modal-->
+		<div id="leModal" class="modal" onclick="closeModal()">
+		  <img class="modal-content" id="img01" alt="lolzorlolzorlolzor">
+		  <div id="caption"><p>tasting</p></div>
+	</div>
 	</body>
 </html>
