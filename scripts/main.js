@@ -4,7 +4,6 @@ function source(src, string) {
 		}
 
 
-
 function openModal(el) {
     var imgSrc = el.src;
     var getAlt = el.alt;
